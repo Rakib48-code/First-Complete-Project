@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem id="main_menu_hospital"
+              name="Rakib Hospital Management"
+              sequence="0"/>
+
+    <menuitem id="patient_details_main_menu"
+              name="Patients Details"
+              parent="main_menu_hospital"
+              sequence="0"/>
+</odoo>
