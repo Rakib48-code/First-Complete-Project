@@ -11,6 +11,7 @@
         'security/ir.model.access.csv',  # Security rules
         'views/menu_view.xml',     # Menu views
         'views/patient_view.xml',  # Patient views
+        'views/female_patient_view.xml' ,   # Female Patient views
         #'views/doctor_view.xml',  # Doctor views
         'views/appointment_view.xml',  # Appointment views
         #'data/default_data.xml',  # Default data

@@ -6,14 +6,14 @@ class HospitalPatient(models.Model):
     _description = 'Hospital Patient'
     _inherit = ['mail.thread','mail.activity.mixin']
 
-    name = fields.Char(string='Patient Name', required=True)
-    date_of_birth = fields.Date(string='Date of Birth')
+    name = fields.Char(string='Patient Name', required=True, tracking=True)
+    date_of_birth = fields.Date(string='Date of Birth', tracking=True)
     gender = fields.Selection([
         ('male','Male'),
         ('female','Female')
-    ], string='Gender')
-    ref = fields.Char(string='Reference', default='patients')
-    age = fields.Integer(string='Age', compute='_compute_age')
+    ], string='Gender', tracking=True)
+    ref = fields.Char(string='Reference', default='patients', tracking=True)
+    age = fields.Integer(string='Age', compute='_compute_age', tracking=True)
 
     @api.depends('date_of_birth')
     def _compute_age(self):
