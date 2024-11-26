@@ -5,7 +5,7 @@
     'description': 'This module helps manage various hospital activities such as patient records, doctor schedules, appointments, billing, and more.',
     'author': 'Rakib Hasan',
     'category': 'Healthcare',
-    'depends': ['base'],  # Add any other dependencies your module might need
+    'depends': ['base','mail'],  # Add any other dependencies your module might need
     'data': [
         # Add paths to your XML or CSV files
         'security/ir.model.access.csv',  # Security rules
