@@ -14,7 +14,7 @@ class HospitalPatient(models.Model):
     ref = fields.Char(string='Reference', default='patients')
     age = fields.Integer(string='Age', compute='_compute_age')
 
-
+    @api.depends('date_of_birth')
     def _compute_age(self):
         today = date.today()
         for rec in self:
