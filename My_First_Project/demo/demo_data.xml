@@ -1,0 +1,43 @@
+<odoo>
+    <data>
+        <!-- Demo Patient 1 -->
+        <record id="patient1" model="hospital.patient">
+            <field name="name">John Doe</field>
+            <field name="date_of_birth">1985-06-15</field>
+            <field name="gender">male</field>
+            <field name="ref">10001</field>
+        </record>
+
+        <!-- Demo Patient 2 -->
+        <record id="patient2" model="hospital.patient">
+            <field name="name">Jane Smith</field>
+            <field name="date_of_birth">1990-11-25</field>
+            <field name="gender">female</field>
+            <field name="ref">10002</field>
+        </record>
+
+        <!-- Demo Patient 3 -->
+        <record id="patient3" model="hospital.patient">
+            <field name="name">Ali Raza</field>
+            <field name="date_of_birth">2002-03-10</field>
+            <field name="gender">male</field>
+            <field name="ref">10003</field>
+        </record>
+
+        <!-- Demo Patient 4 -->
+        <record id="patient4" model="hospital.patient">
+            <field name="name">Sara Khan</field>
+            <field name="date_of_birth">1995-07-18</field>
+            <field name="gender">female</field>
+            <field name="ref">10004</field>
+        </record>
+
+        <!-- Demo Patient 5 -->
+        <record id="patient5" model="hospital.patient">
+            <field name="name">Michael Brown</field>
+            <field name="date_of_birth">1982-02-02</field>
+            <field name="gender">male</field>
+            <field name="ref">10005</field>
+        </record>
+    </data>
+</odoo>

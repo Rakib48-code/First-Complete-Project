@@ -17,7 +17,7 @@
     ],
     'demo': [
         # Add demo data files if any
-        #'demo/demo_data.xml',
+        'demo/demo_data.xml',
     ],
     'installable': True,
     'application': True,
