@@ -33,6 +33,9 @@
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml">
             <form>
+                <header>
+                    <field name="state" widget="statusbar"/>
+                </header>
                 <sheet>
                     <div class="oe_title">
                         <label for="name" string="Patient Name"/>
@@ -46,6 +49,14 @@
                         <field name="ref"/>
                         <field name="age"/>
                     </group>
+                    <notebook>
+                        <page string="Note">
+                            <field name="note"/>
+                        </page>
+                        <page string="About">
+                            This is an example for patients notebook.
+                        </page>
+                    </notebook>
                 </sheet>
                 <!-- Chatter -->
                 <div class="oe_chatter">

@@ -14,6 +14,13 @@ class HospitalPatient(models.Model):
     ], string='Gender', tracking=True)
     ref = fields.Char(string='Reference', default='patients', tracking=True)
     age = fields.Integer(string='Age', compute='_compute_age', tracking=True)
+    note = fields.Text(string='Note')
+    state = fields.Selection([
+        ('draft','Draft'),
+        ('confirm','Confirmed'),
+        ('approve','Approved'),
+        ('cancel','Cancelled')
+    ], string='Status', default='draft')
 
     @api.depends('date_of_birth')
     def _compute_age(self):
