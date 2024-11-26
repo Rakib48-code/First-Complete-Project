@@ -31,6 +31,8 @@
                         </div>
                         <field name="appointment_time"/>
                         <field name="booking_date"/>
+                        <field name="gender"/>
+                        <field name="ref"/>
                     </group>
                 </sheet>
             </form>
