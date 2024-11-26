@@ -7,7 +7,7 @@
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml">
             <search>
-                <field name="name"/>
+                <field name="name" string="Patient Name"/>
             </search>
         </field>
     </record>
