@@ -27,6 +27,8 @@
                                 <field name="patient_id"/>
                             </h1>
                         </div>
+                        <field name="appointment_time"/>
+                        <field name="booking_date"/>
                     </group>
                 </sheet>
             </form>
