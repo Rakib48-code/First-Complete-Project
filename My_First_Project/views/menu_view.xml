@@ -8,4 +8,10 @@
               name="Patients Details"
               parent="main_menu_hospital"
               sequence="0"/>
+
+    <menuitem id="appointment_main_menu"
+              name="Appointments Details"
+              parent="main_menu_hospital"
+              sequence="3"/>
+
 </odoo>

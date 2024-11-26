@@ -39,5 +39,6 @@
             <field name="gender">male</field>
             <field name="ref">10005</field>
         </record>
+
     </data>
 </odoo>
